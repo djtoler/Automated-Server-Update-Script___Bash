@@ -10,6 +10,7 @@
 # IN OUR TERMINAL, WE WILL TYPE IN THE COMMAND 'crontab -e'. THIS WILL OPEN OUR FILE WHERE OUR CRON JOBS WILL BE STORED.
 # ONCE WE ARE IN THERE, WE NEED TO SCROLL TO THE BOTTOM OF THE PAGE AND ADD THE FOLLOWING COMMAND "0 23 * * 5 /home/ubuntu/assignments/server_update_assignment/server_update_script.sh"
 # THE CRON COMMAND ABOVE WILL RUN OUR SERVER SCRIPT EVERY FRIDAY AT 11PM.
+# (0 23 * * 5) this tells the cron job to run exactly at the begining (0) of the 23rd hour (23) on the 5th day (5) of every week.
 
 # We will use the "date" command to get the current date and store it in a variable called "curent_date" so that we can use it later on to create our file name
 current_date=$(date +'%m.%d.%y')
